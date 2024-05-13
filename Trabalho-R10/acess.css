@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #ff3700;
+
+}
+body{
+    background: black;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/r/acessorior10.jpg);
+    background-size: cover;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 40px;
+    color: gold;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-top: -50px;
+}
+
+.nav{
+    margin-left: 10%;
+    display: flex;
+}
+
+
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+.nav li a{
+    color: gold;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav li:hover a{
+    color: var(--primary);
+}
+.nav li a img{
+    width: 100px;
+    height: 100px;
+    margin-top: -35%;
+}
+
+.search{
+    position: relative;
+    width: 300px;
+    height: -35px;
+}
+.search input{
+    position: absolute;
+    left: 0;
+    top: -50px;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    background: transparent;
+    border: 1 solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px !important;
+    backdrop-filter: blur(10px);
+}
+.search input ::placeholder{
+    color: aliceblue;
+}
+.search i{
+    position: absolute;
+    top: -27px;
+    transform: translateY(-50%);
+    left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+    border-right: 1px solid white;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  
+  
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  align-items: flex-end;
+  justify-content: center;
+  height: 600px;
+}
+
+.card {
+  flex: 0 0 200px;
+  height: 200px;
+  margin: 0 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: transform 1s;
+}
