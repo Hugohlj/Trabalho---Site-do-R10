@@ -33,28 +33,32 @@
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
     </header>
-    <form action="cadastro.php" method="POST">
     <div class="container">
-          <h1>Login</h1>
+        <form action="cadastro.php" method="POST">
+          <h1>Cadastre-se</h1>
   
           <div class="input-box">
-            <input type="text" placeholder="usuario" required />
+            <input type="text" placeholder="nome" required />
             <!-- <i class="bx bxs-user"></i> -->
           </div>
+          
+          <div class="input-box">
+            <input type="text" placeholder="sobrenome" required />
+            <!-- <i class="bx bxs-user"></i> -->
+          </div>
+          
+          <div class="input-box">
+            <input type="email" placeholder="email" required />
+            <!-- <i class="bx bxs-user"></i> -->
+          </div>
+          
           <div class="input-box">
             <input type="password" placeholder="senha" required />
             <!-- <i class="bx bxs-lock-alt"></i> -->
           </div>
   
-          <div class="remember-forgot">
-            <label><input type="checkbox" /> Remember me</label>
-            <a href="#">Forgot password?</a>
-          </div>
+          <button type="submit" class="btn">Cadastrar</button>
   
-          <button type="submit" class="btn">Login</button>
-  
-          <div class="register-link">
-            <p>Don't have an account? <a href="cadastro.html">Register here!</a></p>
           </div>
         </form>
       </div>
